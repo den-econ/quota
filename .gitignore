@@ -1,0 +1,78 @@
+# ============================================================
+# DEN Economic Lab — Standard .gitignore
+# Covers: Stata, R, Python, LaTeX, OS files
+# ============================================================
+
+# ── Stata ────────────────────────────────────────────────────
+*.dta.bak
+*.log
+~*.dta
+*.smcl
+
+# ── R ────────────────────────────────────────────────────────
+.Rhistory
+.RData
+.Rproj.user/
+*.Rproj
+
+# ── Python ───────────────────────────────────────────────────
+__pycache__/
+*.py[cod]
+*.egg-info/
+.env
+.venv/
+venv/
+dist/
+build/
+
+# ── LaTeX / Quarto ───────────────────────────────────────────
+*.aux
+*.bbl
+*.bcf
+*.blg
+*.fdb_latexmk
+*.fls
+*.lof
+*.lot
+*.out
+*.run.xml
+*.synctex.gz
+*.toc
+*.xdv
+_quarto/
+.quarto/
+
+# ── Large data files (use Dataverse or Zenodo instead) ───────
+data/raw/*.dta
+data/raw/*.csv
+data/raw/*.xlsx
+data/raw/*.xls
+data/raw/*.zip
+
+# Exceptions: allow small reference files if needed
+# !data/raw/small_lookup_table.csv
+
+# ── Sensitive / credentials ──────────────────────────────────
+.env
+*.env
+secrets/
+credentials/
+*_key.txt
+*_token.txt
+config_local.do
+config_local.R
+
+# ── OS files ─────────────────────────────────────────────────
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+Thumbs.db
+desktop.ini
+
+# ── Editor files ─────────────────────────────────────────────
+.vscode/
+.idea/
+*.sublime-project
+*.sublime-workspace
