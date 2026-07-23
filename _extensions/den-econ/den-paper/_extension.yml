@@ -1,0 +1,35 @@
+title: DEN Paper
+author: DEN Template
+version: 1.0.0
+quarto-required: ">=1.2.0"
+contributes:
+  formats:
+    pdf:
+      # Template and class settings
+      template: template.tex
+      documentclass: den
+      classoption: []
+      
+      # Copy class files to output directory
+      format-resources:
+        - den.cls
+        - den-logo.pdf
+      
+      # PDF engine settings
+      pdf-engine: lualatex
+      
+      # Citation settings - use citeproc so `csl:` in document metadata is applied
+      cite-method: citeproc
+      
+      # Default format options
+      keep-tex: true
+      
+      # Figure and table settings
+      fig-pos: "htbp!"
+      tbl-cap-location: top
+      
+      # Cross-reference settings
+      crossref:
+        fig-prefix: "Figure"
+        tbl-prefix: "Table"
+        eq-prefix: "Equation"
